@@ -121,17 +121,9 @@ while run:
     
     collisions = pygame.sprite.groupcollide(bulletGroup, enemyGroup, True, True)
 
-
     if len(collisions) == 1:
         score += score_increment
 
-
-    """if pygame.sprite.spritecollideany(squareTarg,bulletGroup):
-        print("hit")
-        squareTarg.kill()
-        squareTarg.update()
-    
-        win.update()"""
     
     #update background
     d.blit(bg, (0,0))
